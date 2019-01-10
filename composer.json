@@ -1,0 +1,16 @@
+{
+  "name": "codeenigma/simplesamlphp-module-ce-theme",
+  "description": "Code Enigma SimpleSAMLphp theme",
+  "type": "simplesamlphp-module",
+  "keywords": ["simplesamlphp", "module", "theme"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Greg Harvey",
+      "email": "greg.harvey@gmail.com"
+    }
+  ],
+  "require": {
+    "simplesamlphp/composer-module-installer": "~1.0"
+  }
+}
