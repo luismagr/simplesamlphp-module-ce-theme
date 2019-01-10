@@ -55,8 +55,8 @@ if (array_key_exists('header', $this->data)) {
 }
 ?></title>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleURL("simplesamlphp-ce-theme/simplesamlphp-ce-theme.css"); ?>" />
-    <link rel="icon" type="image/icon" href="<?php echo SimpleSAML\Module::getModuleURL("simplesamlphp-ce-theme/favicon.ico"); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleURL("ce-theme/simplesamlphp-ce-theme.css"); ?>" />
+    <link rel="icon" type="image/icon" href="<?php echo SimpleSAML\Module::getModuleURL("ce-theme/favicon.ico"); ?>" />
 
 <?php
 
