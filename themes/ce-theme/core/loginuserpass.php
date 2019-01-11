@@ -172,6 +172,8 @@ if (!empty($this->data['links'])) {
     echo '</ul>';
 }
 echo('<h2 class="logintext">'.$this->t('{login:help_header}').'</h2>');
-echo('<p class="logintext">'.$this->t('{ce-theme:login:help_text}').'</p>');
+//echo('<p class="logintext">'.$this->t('{ce-theme:login:help_text}').'</p>');
+# Temporarily hardcoding this message, as dictionary won't load:
+echo('<p class="logintext"><a href="https://dashboard.codeenigma.net/dashboard/password-recovery">You can reset your password here.</a> If that does not work, or you do not know your login, please phone the Code Enigma support team at +44 (0) 20 3588 2200.');
 
 $this->includeAtTemplateBase('includes/footer.php');
