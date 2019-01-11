@@ -15,6 +15,17 @@ body {
      * paper and thus with a white background.
      */
     background: #fafafa;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: #4572FD;
+    background-color: var(--default-background-color);
+    --default-color: #4572FD;
+    --default-color-dark: #4932E8;
+    --default-color-light: #D6D3F6;
+    --default-color-super-light: rgba(69,114,253,0.05);
+    --default-color-menu: #1d0d6e;
+    --default-gradient: linear-gradient(-180deg,#4479FF 0%,#4933E8 100%);
+    --default-background-color: #4933E8;
 }
 
 #wrap {
@@ -34,6 +45,16 @@ body {
     background: #4572FD;
     /* and set the bottom border to complement the #wrap border colour */
     border-bottom: 1px solid ;
+}
+
+#logo {
+    display: block;
+    float: right;
+}
+
+.logo {
+    height: 62px;
+    width: auto;
 }
 
 /* if we have a logo, put it on the right and fit it in the header */
