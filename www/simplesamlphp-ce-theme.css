@@ -72,6 +72,28 @@ body {
     padding-bottom: 0.1rem;
 }
 
+.btn {
+    color: #4572FD;
+    color: var(--default-color);
+    padding: 10px 40px 10px 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #4572FD;
+    border: 2px solid var(--default-color);
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #4932E8;
+    background-color: var(--default-color-dark);
+    border-color: #4932E8;
+    border-color: var(--default-color-dark);
+    color: white;
+}
+
 /* make small screens use the corporate colour as a background */
 @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
     body {
