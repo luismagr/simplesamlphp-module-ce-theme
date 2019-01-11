@@ -79,6 +79,7 @@ button.btn {
     color: #4572FD;
     color: var(--default-color);
     background-color: #FFFFFF;
+    background-image: none;
     padding: 10px 40px 10px 10px;
     font-weight: 800;
     text-transform: uppercase;
@@ -94,6 +95,7 @@ button.btn {
 button.btn:hover {
     background-color: #4932E8;
     background-color: var(--default-color-dark);
+    background-image: none;
     border-color: #4932E8;
     border-color: var(--default-color-dark);
     color: white;
