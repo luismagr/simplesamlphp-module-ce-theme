@@ -50,6 +50,7 @@ body {
 #logo {
     display: block;
     float: right;
+    padding: 5px;
 }
 
 .logo {
