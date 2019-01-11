@@ -45,6 +45,7 @@ body {
     background: #4572FD;
     /* and set the bottom border to complement the #wrap border colour */
     border-bottom: 1px solid ;
+    height: 104px;
 }
 
 #logo {
@@ -73,11 +74,11 @@ body {
     padding-bottom: 0.1rem;
 }
 
-.btn {
+.btn,
+button.btn {
     color: #4572FD;
     color: var(--default-color);
-    background-color: #4932E8;
-    background-color: var(--default-color-dark);
+    background-color: #FFFFFF;
     padding: 10px 40px 10px 10px;
     font-weight: 800;
     text-transform: uppercase;
@@ -89,7 +90,8 @@ body {
     transition: .3s;
 }
 
-.btn:hover {
+.btn:hover,
+button.btn:hover {
     background-color: #4932E8;
     background-color: var(--default-color-dark);
     border-color: #4932E8;
