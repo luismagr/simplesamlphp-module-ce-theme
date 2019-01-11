@@ -50,7 +50,7 @@ body {
 #logo {
     display: block;
     float: right;
-    padding: 5px;
+    padding: 20px;
 }
 
 .logo {
@@ -76,6 +76,8 @@ body {
 .btn {
     color: #4572FD;
     color: var(--default-color);
+    background-color: #4932E8;
+    background-color: var(--default-color-dark);
     padding: 10px 40px 10px 10px;
     font-weight: 800;
     text-transform: uppercase;
