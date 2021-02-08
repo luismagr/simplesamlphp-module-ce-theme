@@ -36,7 +36,9 @@ if ($this->data['errorcode'] !== null) {
 
             <div class="teaser__text">
               <h2 class="teaser__title"><?php echo $this->t('{login:user_pass_header}'); ?></h2>
-              <p class="logintext"><?php echo $this->t('{simplesamlphp-module-ce-theme:login:user_pass_text}'); ?></p>
+              <!-- <p class="logintext"><?php echo $this->t('{login:user_pass_text}'); ?></p>
+              # Cannot translate - see https://github.com/simplesamlphp/simplesamlphp/issues/1040 -->
+              <p class="logintext">Please enter your login details in the form below to access Code Enigma services.</p>
               <form action="?" method="post" name="f">
                 <table>
                   <tr>
@@ -187,7 +189,7 @@ if (!empty($this->data['links'])) {
               <div class="block-get-in-touch">
                 <!-- <h2 class="logintext"><?php echo $this->t('{login:help_header}'); ?></h2>
                 <p class="logintext"><?php echo $this->t('{ce-theme:login:help_text}'); ?></p>
-                # Temporarily hardcoding this message, as dictionary won't load: -->
+                # Cannot translate - see https://github.com/simplesamlphp/simplesamlphp/issues/1040 -->
                 <p class="logintext" style="font-size:22px;"><a href="https://dashboard.codeenigma.net/dashboard/password-recovery">You can reset your password here.</a>
                 If that does not work, or you do not know your login, please phone the Code Enigma support team at +44 (0) 20 3588 1550.</p>
               </div>
