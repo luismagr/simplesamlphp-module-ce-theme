@@ -40,10 +40,11 @@ if ($this->data['errorcode'] !== null) {
               <form action="?" method="post" name="f">
                 <table>
                   <tr>
-                    <td rowspan="2" class="loginicon">
+                    <!-- <td rowspan="2" class="loginicon">
                       <img alt=""
                       src="/<?php echo $this->data['baseurlpath']; ?>resources/icons/experience/gtk-dialog-authentication.48x48.png" />
-                    </td>
+                    </td> -->
+                    <td rowspan="2">&nbsp;</td>
                     <td><label for="username"><?php echo $this->t('{login:username}'); ?></label></td>
                     <td>
                       <input id="username" <?php echo ($this->data['forceUsername']) ? 'disabled="disabled"' : ''; ?>
