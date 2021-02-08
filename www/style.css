@@ -65,10 +65,6 @@ section,
 summary {
   display: block; }
 
-/* all last children with a class */
-[class]:last-child {
-  margin-bottom: 0; }
-
 audio,
 canvas,
 video {
