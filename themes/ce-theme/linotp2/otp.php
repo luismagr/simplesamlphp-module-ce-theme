@@ -3,7 +3,10 @@ $this->data['header'] = $this->t('{linotp2:device:authenticate}');
 $this->data['autofocus'] = 'otp';
 
 $this->includeAtTemplateBase('includes/header.php');
-
+?>
+      <article class="article-no-sidebar" role="article">
+        <section class="content-slice__paragraphs">
+<?php
 if ($this->data['error']) {
 ?>
           <div class="call-to-action">
@@ -56,6 +59,7 @@ foreach ($this->data['params'] as $name => $value) {
               </div>
             </div>
           </div>
-
+        </section>
+      </article>
 <?php
 $this->includeAtTemplateBase('includes/footer.php');

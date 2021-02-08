@@ -9,7 +9,8 @@ if (strlen($this->data['username']) > 0) {
 $this->includeAtTemplateBase('includes/header.php');
 
 ?>
-
+      <article class="article-no-sidebar" role="article">
+        <section class="content-slice__paragraphs">
 <?php
 if ($this->data['errorcode'] !== null) {
     ?>
@@ -201,6 +202,8 @@ if (!empty($this->data['links'])) {
               </div>
             </div>
           </div>
+        </section>
+      </article>
 <?php
 $this->includeAtTemplateBase('includes/footer.php');
 

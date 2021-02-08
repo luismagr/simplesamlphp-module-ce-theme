@@ -281,8 +281,6 @@ if (!empty($this->data['htmlinject']['htmlContentHead'])) {
 ?>
 -->
     <main id="maincontent" class="main--content">
-      <article class="article-no-sidebar" role="article">
-        <section class="content-slice__paragraphs">
 <?php
 if (!empty($this->data['htmlinject']['htmlContentPre'])) {
     foreach ($this->data['htmlinject']['htmlContentPre'] as $c) {

@@ -5,8 +5,6 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
 	}
 }
 ?>
-          </section>
-        </article>
 	  </main><!-- #content -->
 
 	  <footer>
