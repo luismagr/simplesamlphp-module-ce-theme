@@ -36,7 +36,7 @@ if ($this->data['errorcode'] !== null) {
 
             <div class="teaser__text">
               <h2 class="teaser__title"><?php echo $this->t('{login:user_pass_header}'); ?></h2>
-              <p class="logintext"><?php echo $this->t('{login:user_pass_text}'); ?></p>
+              <p class="logintext"><?php echo $this->t('{simplesamlphp-module-ce-theme:login:user_pass_text}'); ?></p>
               <form action="?" method="post" name="f">
                 <table>
                   <tr>
