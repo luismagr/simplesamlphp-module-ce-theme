@@ -188,7 +188,7 @@ if (!empty($this->data['links'])) {
                 <p class="logintext"><?php echo $this->t('{ce-theme:login:help_text}'); ?></p>
                 # Temporarily hardcoding this message, as dictionary won't load: -->
                 <p class="logintext" style="font-size:22px;"><a href="https://dashboard.codeenigma.net/dashboard/password-recovery">You can reset your password here.</a>
-                If that does not work, or you do not know your login, please phone the Code Enigma support team at +44 (0) 20 3588 2200.</p>
+                If that does not work, or you do not know your login, please phone the Code Enigma support team at +44 (0) 20 3588 1550.</p>
               </div>
             </div>
           </div>

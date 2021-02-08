@@ -192,7 +192,7 @@ if (!empty($this->data['htmlinject']['htmlContentHead'])) {
           </div>
           <section class="header-section__inner">
             <div class="header-section__text">
-                <h1 class="h1--large">Login to Code Enigma</h1>
+                <h1 class="h1--large">Log into Code Enigma</h1>
                 <p class="standfirst__large">Enter your username and password</p>
             </div>
           </section>
