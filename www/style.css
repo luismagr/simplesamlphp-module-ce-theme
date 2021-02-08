@@ -562,34 +562,9 @@ pre {
   border-left: none;
   border-right: none; }
   .block-get-in-touch p {
-    margin-top: 0;
     color: white;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin: 0 auto;
-    font-size: 28px;
-    line-height: 5; }
-    .block-get-in-touch p::before {
-      content: "";
-      background: url("images/glitter/white-star-left.png") no-repeat;
-      background-size: contain;
-      width: 50px;
-      height: 80px;
-      display: inline-block;
-      position: relative;
-      top: 35px;
-      opacity: 0; }
-    .block-get-in-touch p::after {
-      content: "";
-      background: url("images/glitter/white-star-right.png") no-repeat;
-      background-size: contain;
-      width: 50px;
-      height: 80px;
-      display: inline-block;
-      position: relative;
-      top: 37px;
-      opacity: 0; }
+    margin: 35px;
+    font-size: 25px; }
   .block-get-in-touch a {
     color: white; }
     .block-get-in-touch a:hover {

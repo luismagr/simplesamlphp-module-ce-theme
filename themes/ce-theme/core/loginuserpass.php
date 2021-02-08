@@ -184,10 +184,10 @@ if (!empty($this->data['links'])) {
           <div class="call-to-action">
             <div class="call-to-action">
               <div class="block-get-in-touch">
-                <h2 class="logintext"><?php echo $this->t('{login:help_header}'); ?></h2>
-                <!-- <p class="logintext"><?php echo $this->t('{ce-theme:login:help_text}'); ?></p>
+                <!-- <h2 class="logintext"><?php echo $this->t('{login:help_header}'); ?></h2>
+                <p class="logintext"><?php echo $this->t('{ce-theme:login:help_text}'); ?></p>
                 # Temporarily hardcoding this message, as dictionary won't load: -->
-                <p class="logintext" style="font-size:28px;"><a href="https://dashboard.codeenigma.net/dashboard/password-recovery">You can reset your password here.</a>
+                <p class="logintext" style="font-size:22px;"><a href="https://dashboard.codeenigma.net/dashboard/password-recovery">You can reset your password here.</a>
                 If that does not work, or you do not know your login, please phone the Code Enigma support team at +44 (0) 20 3588 2200.</p>
               </div>
             </div>
