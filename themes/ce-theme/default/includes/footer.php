@@ -5,8 +5,10 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
 	}
 }
 ?>
-	    </div><!-- #content -->
-	  </main>
+            </div>
+          </section>
+        </article>
+	  </main><!-- #content -->
 
 	  <footer>
 		<div class="footer__top">
@@ -22,13 +24,13 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
 		</div>
 		<div class="footer__bottom flex-row">
 			<div class="footer__bottom--link">
-			<a href="/jobs">Want to work at Code Enigma?</a>
+			<a href="https://www.codeenigma.com/contact-us">Contact Code Enigma</a>
 			</div>
 			<div class="footer__bottom--link">
-			<a href="/about-us/legal">Legal</a>
+			<a href="https://www.codeenigma.com/about-us/legal">Legal</a>
 			</div>
 		</div>
 	  </footer>
-	</div>
+	</div><!-- #wrapper -->
   </body>
 </html>
