@@ -13,21 +13,25 @@ $this->includeAtTemplateBase('includes/header.php');
 <?php
 if ($this->data['errorcode'] !== null) {
     ?>
-    <div style="border-left: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; background: #f5f5f5">
-        <img src="/<?php echo $this->data['baseurlpath']; ?>resources/icons/experience/gtk-dialog-error.48x48.png"
-             class="float-l erroricon" style="margin: 15px" alt=""/>
+          <div class="call-to-action">
+            <div class="call-to-action">
+              <div class="block-get-in-touch">
+                <img src="/<?php echo $this->data['baseurlpath']; ?>resources/icons/experience/gtk-dialog-error.48x48.png"
+                    class="float-l erroricon" style="margin: 15px" alt="Error occurred!"/>
 
-        <h2><?php echo $this->t('{login:error_header}'); ?></h2>
+                <h2><?php echo $this->t('{login:error_header}'); ?></h2>
+                <p><strong><?php
+                    echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?></strong>
+                </p>
 
-        <p><strong><?php
-            echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?></strong></p>
-
-        <p><?php
-            echo htmlspecialchars($this->t($this->data['errorcodes']['descr'][$this->data['errorcode']], $this->data['errorparams'])); ?></p>
-    </div>
+                <p><?php
+                    echo htmlspecialchars($this->t($this->data['errorcodes']['descr'][$this->data['errorcode']], $this->data['errorparams'])); ?>
+                </p>
+              </div>
+            </div>
+          </div>
 <?php
 }
-
 ?>
           <div class="teaser teaser__full-width">
             <div class="teaser__image">
