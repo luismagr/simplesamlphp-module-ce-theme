@@ -29,7 +29,7 @@ if ($this->data['errorcode'] !== null) {
               </div>
             </div>
           </div>
-          <div class="teaser teaser__full-width" style="height: 0px;">
+          <div class="teaser teaser__full-width" style="height: 0px; padding: 0;">
               &nbsp;
           </div>
 <?php

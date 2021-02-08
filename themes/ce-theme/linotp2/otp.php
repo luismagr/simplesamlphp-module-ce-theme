@@ -22,7 +22,7 @@ if ($this->data['error']) {
               </div>
             </div>
           </div>
-          <div class="teaser teaser__full-width" style="height: 0px;">
+          <div class="teaser teaser__full-width" style="height: 0px; padding: 0;">
               &nbsp;
           </div>
 <?php
