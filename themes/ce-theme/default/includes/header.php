@@ -67,7 +67,7 @@ if ($onLoad !== '') {
     <title>Login to Code Enigma</title>
 
     <link rel="shortcut icon" href="<?php echo SimpleSAML\Module::getModuleURL("ce-theme/icons/favicon.ico"); ?>" type="image/vnd.microsoft.icon" />
-    <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleURL("ce-theme/style.min.css"); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo SimpleSAML\Module::getModuleURL("ce-theme/style.css"); ?>" />
     <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://use.typekit.net/zlk0buq.css">
 

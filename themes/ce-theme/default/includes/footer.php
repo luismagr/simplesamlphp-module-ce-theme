@@ -11,7 +11,7 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
 	  <footer>
 		<div class="footer__top">
 			<div id="block-copyrightblock">
-			&copy; Code Enigma, 2021
+			&copy; Code Enigma, <?php echo date("Y"); ?>
 			</div>
 		</div>
 		<div class="footer__middle flex-row bg-arches">
