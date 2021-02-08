@@ -408,7 +408,7 @@ pre {
   width: auto; }
 
 .bg-arches {
-  background-image: url("../../assets/images/arch.png"); }
+  background-image: url("images/arch.png"); }
 
 .logo {
   width: auto;
@@ -572,7 +572,7 @@ pre {
     line-height: 5; }
     .block-get-in-touch p::before {
       content: "";
-      background: url("../../assets/images/glitter/white-star-left.png") no-repeat;
+      background: url("images/glitter/white-star-left.png") no-repeat;
       background-size: contain;
       width: 50px;
       height: 80px;
@@ -582,7 +582,7 @@ pre {
       opacity: 0; }
     .block-get-in-touch p::after {
       content: "";
-      background: url("../../assets/images/glitter/white-star-right.png") no-repeat;
+      background: url("images/glitter/white-star-right.png") no-repeat;
       background-size: contain;
       width: 50px;
       height: 80px;
@@ -756,8 +756,8 @@ pre {
     .header-section__inner h1::after {
       display: block;
       content: "";
-      -webkit-mask: url(../../assets/images/underline.svg) no-repeat 50% 50%;
-      mask: url(../../assets/images/underline.svg) no-repeat 50% 50%;
+      -webkit-mask: url(images/underline.svg) no-repeat 50% 50%;
+      mask: url(images/underline.svg) no-repeat 50% 50%;
       -webkit-mask-size: cover;
       mask-size: cover;
       background-color: var(--default-color);
@@ -1119,8 +1119,8 @@ input.search {
   width: 15px;
   height: 8px;
   display: inline-block;
-  -webkit-mask: url(/themes/custom/ce/assets/images/svgs/down-active.svg) no-repeat 50% 50%;
-  mask: url(/themes/custom/ce/assets/images/svgs/down-active.svg) no-repeat 50% 50%;
+  -webkit-mask: url(images/svgs/down-active.svg) no-repeat 50% 50%;
+  mask: url(images/svgs/down-active.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: white; }
@@ -1129,8 +1129,8 @@ input.search {
   width: 15px;
   height: 15px;
   display: inline-block;
-  -webkit-mask: url(/themes/custom/ce/assets/images/svgs/close.svg) no-repeat 50% 50%;
-  mask: url(/themes/custom/ce/assets/images/svgs/close.svg) no-repeat 50% 50%;
+  -webkit-mask: url(images/svgs/close.svg) no-repeat 50% 50%;
+  mask: url(images/svgs/close.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: white;
@@ -1666,7 +1666,7 @@ footer {
   .shout svg {
     transform: rotate(-90deg); }
   .shout:hover {
-    background: url("../../assets/images/glitter/white.png") no-repeat;
+    background: url("images/glitter/white.png") no-repeat;
     background-size: contain;
     color: var(--default-color); }
     .shout:hover svg path {
@@ -1792,7 +1792,7 @@ body.blog-archive .blog-posts-archive {
           width: 14px;
           height: 20px;
           margin-left: 20px;
-          background: url(../../assets/images/vector.png) no-repeat scroll 0 0 transparent; }
+          background: url(images/vector.png) no-repeat scroll 0 0 transparent; }
       body.blog-archive .blog-posts-archive > header .block-archive-filter.filtered-by-year .bp-archive-months,
       body.blog-archive .blog-posts-archive .views-view-grid .block-archive-filter.filtered-by-year .bp-archive-months {
         display: none; }
@@ -1822,7 +1822,7 @@ body.blog-archive .blog-posts-archive {
             width: 14px;
             height: 20px;
             margin-left: 20px;
-            background: url(../../assets/images/vector.png) no-repeat scroll 0 0 transparent; }
+            background: url(images/vector.png) no-repeat scroll 0 0 transparent; }
           body.blog-archive .blog-posts-archive > header .block-archive-filter.filtered-by-month .bp-archive-year > a.active ~ .bp-archive-months > a,
           body.blog-archive .blog-posts-archive .views-view-grid .block-archive-filter.filtered-by-month .bp-archive-year > a.active ~ .bp-archive-months > a {
             display: none; }
@@ -2710,8 +2710,8 @@ svg#watermark {
   width: 15px;
   height: 8px;
   display: none;
-  -webkit-mask: url(/themes/custom/ce/assets/images/svgs/down-active.svg) no-repeat 50% 50%;
-  mask: url(/themes/custom/ce/assets/images/svgs/down-active.svg) no-repeat 50% 50%;
+  -webkit-mask: url(images/svgs/down-active.svg) no-repeat 50% 50%;
+  mask: url(images/svgs/down-active.svg) no-repeat 50% 50%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: white;
@@ -3186,7 +3186,7 @@ svg#watermark {
       width: 25px;
       height: 25px;
       margin-right: 10px;
-      background: url(../../assets/images/archive-icon.png) no-repeat scroll 0 0 transparent; }
+      background: url(images/archive-icon.png) no-repeat scroll 0 0 transparent; }
 
 .blog-post.view-mode-curated-main .blog-post-header .title {
   font-size: 40px;
