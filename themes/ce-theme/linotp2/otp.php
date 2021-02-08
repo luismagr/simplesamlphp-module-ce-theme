@@ -3,6 +3,30 @@ $this->data['header'] = $this->t('{linotp2:device:authenticate}');
 $this->data['autofocus'] = 'otp';
 
 $this->includeAtTemplateBase('includes/header.php');
+
+if ($this->data['error']) {
+?>
+          <div class="call-to-action">
+            <div class="call-to-action">
+              <div class="block-get-in-touch">
+                <img src="/<?php echo $this->data['baseurlpath']; ?>resources/icons/experience/gtk-dialog-error.48x48.png"
+                    class="float-l erroricon" style="margin: 15px" alt="Error occurred!"/>
+
+                <p><strong><?php echo $this->t('{login:error_header}'); ?></strong></p>
+                <p style="font-size: 22px;"><?php
+                    echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?>
+                </p>
+                <p style="font-size: 22px;"><?php
+                    echo htmlspecialchars($this->t($this->data['errorcodes']['descr'][$this->data['errorcode']], $this->data['errorparams'])); ?>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="teaser teaser__full-width" style="height: 0px;">
+              &nbsp;
+          </div>
+<?php
+}
 ?>
           <div class="teaser teaser__full-width">
             <div class="teaser__image">
@@ -22,14 +46,6 @@ $this->includeAtTemplateBase('includes/header.php');
 <?php
 foreach ($this->data['params'] as $name => $value) {
     echo('<input type="hidden" name="'.htmlspecialchars($name).'" value="'.htmlspecialchars($value).'" />');
-}
-if ($this->data['error']) {
-?>
-                <div class="caution"><!-- style="border-left: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; background: #f5f5f5">-->
-                    <h5><?php echo $this->t('{login:error_header}'); ?></h5>
-                    <p><?php echo $this->data['error']; ?></p>
-                </div>
-<?php
 }
 ?>
                 <p><button type="submit" class="button"><?php echo $this->t('{linotp2:otp:submitbutton}'); ?></button></p>
