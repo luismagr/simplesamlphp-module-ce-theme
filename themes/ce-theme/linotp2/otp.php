@@ -13,12 +13,7 @@ if ($this->data['error']) {
                     class="float-l erroricon" style="margin: 15px" alt="Error occurred!"/>
 
                 <p><strong><?php echo $this->t('{login:error_header}'); ?></strong></p>
-                <p style="font-size: 22px;"><?php
-                    echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?>
-                </p>
-                <p style="font-size: 22px;"><?php
-                    echo htmlspecialchars($this->t($this->data['errorcodes']['descr'][$this->data['errorcode']], $this->data['errorparams'])); ?>
-                </p>
+                <p style="font-size: 22px;"><?php echo $this->data['error']; ?></p>
               </div>
             </div>
           </div>
