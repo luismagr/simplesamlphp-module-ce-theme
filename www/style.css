@@ -84,6 +84,12 @@ img {
   vertical-align: middle;
   -ms-interpolation-mode: bicubic; }
 
+  img.float-l {
+    width: auto;
+    float: left;
+    margin: 15px 15px 0 35px;
+  }
+
 svg:not(:root) {
   overflow: hidden; }
 

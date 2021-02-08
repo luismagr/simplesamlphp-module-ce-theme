@@ -19,16 +19,18 @@ if ($this->data['errorcode'] !== null) {
                 <img src="/<?php echo $this->data['baseurlpath']; ?>resources/icons/experience/gtk-dialog-error.48x48.png"
                     class="float-l erroricon" style="margin: 15px" alt="Error occurred!"/>
 
-                <h2><?php echo $this->t('{login:error_header}'); ?></h2>
-                <p><strong><?php
-                    echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?></strong>
+                <p><strong><?php echo $this->t('{login:error_header}'); ?></strong></p>
+                <p style="font-size: 22px;"><?php
+                    echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?>
                 </p>
-
-                <p><?php
+                <p style="font-size: 22px;"><?php
                     echo htmlspecialchars($this->t($this->data['errorcodes']['descr'][$this->data['errorcode']], $this->data['errorparams'])); ?>
                 </p>
               </div>
             </div>
+          </div>
+          <div class="teaser teaser__full-width">
+              &nbsp;
           </div>
 <?php
 }
