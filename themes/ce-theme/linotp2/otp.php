@@ -35,7 +35,10 @@ if ($this->data['error']) {
               <h2 class="teaser__title"><?php echo $this->t('{linotp2:device:authenticate}'); ?></h2>
 
               <form action="?" method="post" name="f">
-                <p><?php echo $this->t('{linotp2:otp:intro}'); ?></p>
+                <!-- # dictionary bug means we have to hardcode this message.
+                <p><?php echo $this->t('{linotp2:otp:intro}'); ?></p> -->
+                <p>In order to complete your login you need to authenticate using a device registered with us.
+                  Please enter a valid token from your phone app or if you have a YubiKey press it now.</p>
                 <p>
                   <input id="otp" type="text" tabindex="2" name="otp"
                     style="border: 1px solid #ccc; background: #eee; padding: .5em; font-size: medium; width: 70%;
