@@ -2,7 +2,7 @@
 $this->data['header'] = $this->t('metaconv_title');
 $this->includeAtTemplateBase('includes/header.php');
 ?>
-<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom" style="padding: 0 35px;">
 
     <h2><?php echo $this->t('metaconv_title'); ?></h2>
     <form action="?" method="post" enctype="multipart/form-data">
@@ -13,7 +13,7 @@ $this->includeAtTemplateBase('includes/header.php');
         </p>
         <p>
             <?php echo $this->t('metaconv_selectfile'); ?>
-            <input type="file" name="xmlfile" /></p>
+            <input type="file" name="xmlfile" class="button" /></p>
         <p>
             <button type="submit" class="button"><?php echo $this->t('metaconv_parse'); ?></button>
         </p>
