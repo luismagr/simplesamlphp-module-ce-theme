@@ -79,29 +79,11 @@ if ($onLoad !== '') {
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-config" content="<?php echo SimpleSAML\Module::getModuleURL("ce-theme/icons/browserconfig.xml"); ?>">
 
+    <!-- Always load in jQuery -->
+    <script type="text/javascript" src="/<?php echo $this->data['baseurlpath']; ?>resources/jquery-1.8.js"></script>
+    <script type="text/javascript" src="/<?php echo $this->data['baseurlpath']; ?>resources/jquery-ui-1.8.js"></script>
+    <link rel="stylesheet" media="screen" type="text/css" href="/<?php echo $this->data['baseurlpath']; ?>resources/uitheme1.8/jquery-ui.css" />
 <?php
-if (!empty($jquery)) {
-    $version = '1.8';
-    if (array_key_exists('version', $jquery)) {
-        $version = $jquery['version'];
-    }
-
-    if ($version == '1.8') {
-        if (isset($jquery['core']) && $jquery['core']) {
-            echo('<script type="text/javascript" src="/' . $this->data['baseurlpath'] . 'resources/jquery-1.8.js"></script>' . "\n");
-        }
-
-        if (isset($jquery['ui']) && $jquery['ui']) {
-            echo('<script type="text/javascript" src="/' . $this->data['baseurlpath'] . 'resources/jquery-ui-1.8.js"></script>' . "\n");
-        }
-
-        if (isset($jquery['css']) && $jquery['css']) {
-            echo('<link rel="stylesheet" media="screen" type="text/css" href="/' . $this->data['baseurlpath'] .
-                'resources/uitheme1.8/jquery-ui.css" />' . "\n");
-        }
-    }
-}
-
 if (isset($this->data['clipboard.js'])) {
     echo '<script type="text/javascript" src="/' . $this->data['baseurlpath'] .
          'resources/clipboard.min.js"></script>' . "\n";
