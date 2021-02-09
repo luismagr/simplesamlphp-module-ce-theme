@@ -5,21 +5,29 @@ if(!empty($this->data['htmlinject']['htmlContentPost'])) {
 	}
 }
 ?>
-	</div><!-- #content -->
-	<div id="footer">
-		<hr />
+	  </main><!-- #content -->
 
-<!--
- 		<img src="/<?php echo $this->data['baseurlpath']; ?>resources/icons/ssplogo-fish-small.png" alt="Small fish logo" style="float: right" />		
-		Copyright &copy; 2007-2018 <a href="http://uninett.no/">UNINETT AS</a>
--->
-		<span class="float-r">Code Enigma</span>
-		
-		<br style="clear: right" />
-	
-	</div><!-- #footer -->
-
-</div><!-- #wrap -->
-
-</body>
+	  <footer>
+		<div class="footer__top">
+			<div id="block-copyrightblock">
+			&copy; Code Enigma, <?php echo date("Y"); ?>
+			</div>
+		</div>
+		<div class="footer__middle flex-row bg-arches">
+			<div class="footer__middle-left">
+			</div>
+			<div class="footer__middle-right">
+			</div>
+		</div>
+		<div class="footer__bottom flex-row">
+			<div class="footer__bottom--link">
+			<a href="https://www.codeenigma.com/contact-us">Contact Code Enigma</a>
+			</div>
+			<div class="footer__bottom--link">
+			<a href="https://www.codeenigma.com/about-us/legal">Legal</a>
+			</div>
+		</div>
+	  </footer>
+	</div><!-- #wrapper -->
+  </body>
 </html>

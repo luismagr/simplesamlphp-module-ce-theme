@@ -6,7 +6,7 @@
 		"en": "Enter your username and password"
 	},
 	"user_pass_text": {
-		"en": "A service has requested you to authenticate yourself. Please enter your username and password in the form below."
+		"en": "Please enter your login details in the form below to access Code Enigma services."
 	},
 	"login_button": {
 		"en": "Login"
