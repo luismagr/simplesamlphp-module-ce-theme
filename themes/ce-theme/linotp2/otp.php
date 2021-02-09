@@ -42,7 +42,7 @@ if ($this->data['error']) {
                 <p>
                   <input id="otp" type="text" tabindex="2" name="otp"
                     style="border: 1px solid #ccc; background: #eee; padding: .5em; font-size: medium; width: 70%;
-                         color: #000" />
+                         color: #000" autofocus />
                 </p>
 <?php
 foreach ($this->data['params'] as $name => $value) {
