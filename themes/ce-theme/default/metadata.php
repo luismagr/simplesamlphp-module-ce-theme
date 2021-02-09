@@ -1,7 +1,7 @@
 <?php
 $this->data['header'] = $this->t($this->data['headerString']);
 $this->includeAtTemplateBase('includes/header.php'); ?>
-  <div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+  <div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom" style="padding: 0 20px;">
     <h2><?php echo $this->data['header']; ?></h2>
     <p><?php echo $this->t('metadata_intro'); ?></p>
 <?php if (isset($this->data['metaurl'])) { ?>

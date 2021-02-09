@@ -1,7 +1,7 @@
 <?php
 $this->includeAtTemplateBase('includes/header.php');
 ?>
-<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom" style="padding: 0 20px;">
   <div class="metadatabox">
     <button data-clipboard-target="#metadata" id="btncp" class="btn topright" style="margin-right: 0.5em;">
         <img src="/<?php echo $this->data['baseurlpath'].'resources/icons/clipboard.svg'; ?>"

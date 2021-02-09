@@ -2,7 +2,7 @@
 $this->data['header'] = $this->t('metaconv_title');
 $this->includeAtTemplateBase('includes/header.php');
 ?>
-<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom" style="padding: 0 35px;">
+<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom" style="padding: 0 20px;">
 
     <h2><?php echo $this->t('metaconv_title'); ?></h2>
     <form action="?" method="post" enctype="multipart/form-data">
