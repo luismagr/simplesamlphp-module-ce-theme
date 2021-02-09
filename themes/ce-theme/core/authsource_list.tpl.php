@@ -1,4 +1,3 @@
-<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
 <?php
 /**
  * Template to show list of configured authentication sources.
@@ -7,6 +6,7 @@
 $this->data['header'] = 'Test authentication sources';
 $this->includeAtTemplateBase('includes/header.php');
 ?>
+<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
   <h1><?php echo $this->data['header']; ?></h1>
   <ul>
 <?php

@@ -1,0 +1,14 @@
+<div id="portalcontent" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+{% set pagetitle = 'Test Authentication Sources'|trans %}
+{% set frontpage_section = 'test' %}
+{% extends "base.twig" %}
+
+{% block content %}
+    {%- include "@admin/includes/menu.twig" %}
+    <ul>
+    {% for key, name in sources %}
+        <li><a href="test/{{ name|escape('url') }}">{{ name }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+</div>
