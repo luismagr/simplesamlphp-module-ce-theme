@@ -21,7 +21,7 @@ $this->includeAtTemplateBase('includes/attributes.php');
 if (isset($this->data['remaining'])) {
     echo '<p>'.$this->t('{status:validfor}', ['%SECONDS%' => $this->data['remaining']]).'</p>';
 }
-/var/www/live.login.prod/vendor/simplesamlphp/simplesamlphp/templates/status.php
+
 if (isset($this->data['sessionsize'])) {
     echo '<p>'.$this->t('{status:sessionsize}', ['%SIZE%' => $this->data['sessionsize']]).'</p>';
 }
