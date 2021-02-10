@@ -20,7 +20,7 @@ if (isset($this->data['includeTemplate'])) {
 ?>
     <div class="trackidtext">
         <p><?php echo $this->t('report_trackid'); ?></p>
-        <div class="input-group" style="width: 1em;">
+        <div class="input-group">
             <pre id="trackid" class="input-left"><?php echo $this->data['error']['trackId']; ?></pre>
             <button data-clipboard-target="#trackid" id="btntrackid" class="btnaddonright">
                 <img src="/<?php echo $this->data['baseurlpath'].'resources/icons/clipboard.svg'; ?>"
@@ -35,7 +35,7 @@ if ($this->data['showerrors']) {
     <h2><?php echo $this->t('debuginfo_header'); ?></h2>
     <p><?php echo $this->t('debuginfo_text'); ?></p>
 
-    <div style="border: 1px solid #eee; padding: 1em; font-size: x-small">
+    <div style="border: 1px solid #eee; padding: 1em;">
         <p style="margin: 1px"><?php echo htmlspecialchars($this->data['error']['exceptionMsg']); ?></p>
         <pre style="padding: 1em; font-family: monospace;"><?php
             echo htmlspecialchars($this->data['error']['exceptionTrace']); ?></pre>
@@ -60,7 +60,7 @@ if (isset($this->data['errorReportAddress'])) {
         </p>
         <p>
             <input type="hidden" name="reportId" value="<?php echo $this->data['error']['reportId']; ?>"/>
-            <button type="submit" name="send" class="btn"><?php echo $this->t('report_submit'); ?></button>
+            <button type="submit" name="send" class="button"><?php echo $this->t('report_submit'); ?></button>
         </p>
     </form>
     <?php
