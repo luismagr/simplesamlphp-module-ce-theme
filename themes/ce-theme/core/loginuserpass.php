@@ -13,24 +13,24 @@ $this->includeAtTemplateBase('includes/header.php');
         <a id="main-content" tabindex="-1"></a>
         <div class="region region--content">
 
-<?php
-if ($this->data['errorcode'] !== null) {
-?>
-            <div class="system-messages-wrapper" data-drupal-messages="">
-                <div role="contentinfo" aria-label="Error message" class="error">
-                    <div role="alert">
-                        <p><strong><?php echo $this->t('{login:error_header}'); ?></strong></p>
-                        <h2 class="visually-hidden">Error message</h2>
-                        <ul>
-                            <li><?php echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?></li>
-                            <li><?php echo htmlspecialchars($this->t($this->data['errorcodes']['descr'][$this->data['errorcode']], $this->data['errorparams'])); ?></li>
-                        </ul>
+            <?php
+            if ($this->data['errorcode'] !== null) {
+                ?>
+                <div class="system-messages-wrapper" data-drupal-messages="">
+                    <div role="contentinfo" aria-label="Error message" class="error">
+                        <div role="alert">
+                            <p><strong><?php echo $this->t('{login:error_header}'); ?></strong></p>
+                            <h2 class="visually-hidden">Error message</h2>
+                            <ul>
+                                <li><?php echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?></li>
+                                <li><?php echo htmlspecialchars($this->t($this->data['errorcodes']['descr'][$this->data['errorcode']], $this->data['errorparams'])); ?></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-<?php
-}
-?>
+                <?php
+            }
+            ?>
             <div id="block-enigma-corporate-content" class="block block-enigma-corporate-content">
                 <h2 class="teaser__title"><?php echo $this->t('{login:user_pass_header}'); ?></h2>
                 <?php
@@ -65,14 +65,14 @@ if ($this->data['errorcode'] !== null) {
                         ?>
                         <div class="js-form-type-checkbox form-type-checkbox">
                             <label class="option">
-                            <input type="checkbox"
-                                id="remember_username"
-                                tabindex="4"
-                                <?php echo ($this->data['rememberUsernameChecked']) ? 'checked="checked"' : ''; ?>
-                                name="remember_username"
-                                value="Yes"
-                                class="form-checkbox" />
-                            <?php echo $this->t('{login:remember_username}'); ?></label>
+                                <input type="checkbox"
+                                       id="remember_username"
+                                       tabindex="4"
+                                    <?php echo ($this->data['rememberUsernameChecked']) ? 'checked="checked"' : ''; ?>
+                                       name="remember_username"
+                                       value="Yes"
+                                       class="form-checkbox" />
+                                <?php echo $this->t('{login:remember_username}'); ?></label>
                         </div>
                         <?php
                     }
@@ -84,6 +84,7 @@ if ($this->data['errorcode'] !== null) {
                                type="password"
                                id="password"
                                name="password"
+                               tabindex="5"
                                size="60"
                                maxlength="128"
                                required="required"
@@ -97,42 +98,42 @@ if ($this->data['errorcode'] !== null) {
                         // display the remember me checkbox (keep me logged in) ?>
                         <div class="js-form-type-textfield form-item-name js-form-item-name">
                             <label class="js-form-required form-required">
-                            <input type="checkbox"
-                                id="remember_me"
-                                tabindex="5"
-                                <?php echo ($this->data['rememberMeChecked']) ? 'checked="checked"' : ''; ?>
-                                name="remember_me"
-                                value="Yes" />
+                                <input type="checkbox"
+                                       id="remember_me"
+                                       tabindex="6"
+                                    <?php echo ($this->data['rememberMeChecked']) ? 'checked="checked"' : ''; ?>
+                                       name="remember_me"
+                                       value="Yes" />
                                 <?php echo $this->t('{login:remember_me}'); ?></label>
                         </div>
                     <?php } ?>
 
                     <?php if (array_key_exists('organizations', $this->data)) { ?>
-                    <div class="js-form-item form-item js-form-type-select form-type-select">
+                        <div class="js-form-item form-item js-form-type-select form-type-select">
                             <label for="organization"><?php echo $this->t('{login:organization}'); ?></label>
-                                <select name="organization" tabindex="3">
-                                    <?php
-                                    if (array_key_exists('selectedOrg', $this->data)) {
-                                        $selectedOrg = $this->data['selectedOrg'];
+                            <select name="organization" tabindex="7">
+                                <?php
+                                if (array_key_exists('selectedOrg', $this->data)) {
+                                    $selectedOrg = $this->data['selectedOrg'];
+                                } else {
+                                    $selectedOrg = null;
+                                }
+
+                                foreach ($this->data['organizations'] as $orgId => $orgDesc) {
+                                    if (is_array($orgDesc)) {
+                                        $orgDesc = $this->t($orgDesc);
+                                    }
+
+                                    if ($orgId === $selectedOrg) {
+                                        $selected = 'selected="selected" ';
                                     } else {
-                                        $selectedOrg = null;
+                                        $selected = '';
                                     }
-
-                                    foreach ($this->data['organizations'] as $orgId => $orgDesc) {
-                                        if (is_array($orgDesc)) {
-                                            $orgDesc = $this->t($orgDesc);
-                                        }
-
-                                        if ($orgId === $selectedOrg) {
-                                            $selected = 'selected="selected" ';
-                                        } else {
-                                            $selected = '';
-                                        }
-                                        echo '<option '.$selected.'value="'.htmlspecialchars($orgId).'">'.htmlspecialchars($orgDesc).'</option>';
-                                    }
-                                    ?>
-                                </select>
-                    </div>
+                                    echo '<option '.$selected.'value="'.htmlspecialchars($orgId).'">'.htmlspecialchars($orgDesc).'</option>';
+                                }
+                                ?>
+                            </select>
+                        </div>
                     <?php } ?>
 
                     <div class="form-actions js-form-wrapper form-wrapper">
@@ -159,7 +160,7 @@ if ($this->data['errorcode'] !== null) {
                 }
                 ?>
                 <p class="logintext"><a href="https://dashboard.codeenigma.net/dashboard/password-recovery">You can reset your password here.</a>
-                <br>If that does not work, or you do not know your login, please phone the Code Enigma support team at +44 (0) 20 3588 1550.</p>
+                    <br>If that does not work, or you do not know your login, please phone the Code Enigma support team at +44 (0) 20 3588 1550.</p>
             </div>
         </div>
     </section>
