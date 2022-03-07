@@ -120,27 +120,6 @@ if (!empty($this->data['htmlinject']['htmlContentHead'])) {
 
                                 <div class="region--navigation">
                                     <div class="content">
-                                        <ul class="menu--main-nav">
-                                            <li class="menu-item menu--main-nav__menu-item">
-                                                <a href="https://www.codeenigma.com/our-services" title="See our services" data-drupal-link-system-path="node/343">Our services</a>
-                                            </li>
-
-                                            <li class="menu-item menu--main-nav__menu-item">
-                                                <a href="https://www.codeenigma.com/work" data-drupal-link-system-path="node/24">Who we work with</a>
-                                            </li>
-
-                                            <li class="menu-item menu--main-nav__menu-item">
-                                                <a href="https://www.codeenigma.com/about-us" data-drupal-link-system-path="node/129">About us</a>
-                                            </li>
-
-                                            <li class="menu-item menu--main-nav__menu-item">
-                                                <a href="https://www.codeenigma.com/blog" data-drupal-link-system-path="node/318">Blog</a>
-                                            </li>
-
-                                            <li class="menu-item menu--main-nav__menu-item">
-                                                <a href="https://www.codeenigma.com/contact-us">Contact us</a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </nav>
