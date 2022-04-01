@@ -4,65 +4,62 @@ $this->data['autofocus'] = 'otp';
 
 $this->includeAtTemplateBase('includes/header.php');
 ?>
-      <article class="article-no-sidebar" role="article">
-        <section class="content-slice__paragraphs">
-<?php
-if ($this->data['error']) {
-?>
-          <div class="call-to-action">
-            <div class="call-to-action">
-              <div class="block-get-in-touch">
-                <img src="/<?php echo $this->data['baseurlpath']; ?>resources/icons/experience/gtk-dialog-error.48x48.png"
-                    class="float-l erroricon" style="margin: 15px" alt="Error occurred!"/>
+    <section class="section">
+        <a id="main-content" tabindex="-1"></a>
+        <div class="region region--content">
 
-                <p><strong><?php echo $this->t('{login:error_header}'); ?></strong></p>
-                <p style="font-size: 22px;"><?php echo $this->data['error']; ?></p>
-              </div>
-            </div>
-          </div>
-          <div class="teaser teaser__full-width" style="height: 0px; padding: 0;">
-              &nbsp;
-          </div>
-<?php
-}
-?>
-          <div class="teaser teaser__full-width">
-            <div class="teaser__image">
-              <img role="presentation" src="<?php echo SimpleSAML\Module::getModuleURL("ce-theme/images/hosting.jpg"); ?>" width="590" height="443" alt="" typeof="foaf:Image">
-            </div>
+            <?php
+            if (isset($this->data['error']) && $this->data['error'] !== false) {
+                ?>
+                <div class="system-messages-wrapper" data-drupal-messages="">
+                    <div role="contentinfo" aria-label="Error message" class="error">
+                        <div role="alert">
+                            <p><strong><?php echo $this->t('{login:error_header}'); ?></strong></p>
+                            <h2 class="visually-hidden">Error message</h2>
+                            <ul>
+                                <li><?php echo htmlspecialchars($this->data['error']); ?></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
 
-            <div class="teaser__text">
-              <h2 class="teaser__title"><?php echo $this->t('{linotp2:device:authenticate}'); ?></h2>
+            <div id="block-enigma-corporate-content" class="block block-enigma-corporate-content">
+                <h2 class="teaser__title"><?php echo $this->t('{linotp2:device:authenticate}'); ?></h2>
 
-              <form action="?" method="post" name="f">
-                <!-- # dictionary bug means we have to hardcode this message.
+                <form action="?" method="post" name="f">
+                    <!-- # dictionary bug means we have to hardcode this message.
                 <p><?php echo $this->t('{linotp2:otp:intro}'); ?></p> -->
-                <p>In order to complete your login you need to authenticate using a device registered with us.
-                  Please enter a valid token from your phone app or if you have a YubiKey press it now.</p>
-                <p>
-                  <input id="otp" type="text" tabindex="2" name="otp"
-                    style="border: 1px solid #ccc; background: #eee; padding: .5em; font-size: medium; width: 70%;
+                    <p>In order to complete your login you need to authenticate using a device registered with us.
+                        Please enter a valid token from your phone app or if you have a YubiKey press it now.</p>
+                    <p>
+                    <div class="js-form-item form-item js-form-type-textfield form-item-name js-form-item-name">
+                        <input id="otp" type="text" tabindex="2" name="otp"
+                               style="border: 1px solid #ccc; background: #eee; padding: .5em; font-size: medium; width: 70%;
                          color: #000" autofocus />
-                </p>
-<?php
-foreach ($this->data['params'] as $name => $value) {
-    echo('<input type="hidden" name="'.htmlspecialchars($name).'" value="'.htmlspecialchars($value).'" />');
-}
-?>
-                <p><button type="submit" class="button"><?php echo $this->t('{linotp2:otp:submitbutton}'); ?></button></p>
-              </form>
+                    </div>
+                    <?php
+                    foreach ($this->data['params'] as $name => $value) {
+                        echo('<input type="hidden" name="'.htmlspecialchars($name).'" value="'.htmlspecialchars($value).'" />');
+                    }
+                    ?>
+                    <div class="form-actions js-form-wrapper form-wrapper">
+                        <button type="submit" class="button js-form-submit form-submit"><?php echo $this->t('{linotp2:otp:submitbutton}'); ?></button>
+                    </div>
+                </form>
             </div>
-          </div>
+        </div>
 
-          <div class="call-to-action">
+        <div class="call-to-action">
             <div class="call-to-action">
-              <div class="block-get-in-touch">
-                <p>If you do not have a YubiKey, or have never configured a 2FA device for use with Code Enigma services,
-                <a href="https://redmine.codeenigma.net">contact support</a>.</p>
-              </div>
+                <div class="block-get-in-touch">
+                    <p>If you do not have a YubiKey, or have never configured a 2FA device for use with Code Enigma services,
+                        <a href="https://redmine.codeenigma.net">contact support</a>.</p>
+                </div>
             </div>
-          </div>
-        </section>
-      </article>
+        </div>
+    </section>
 <?php
 $this->includeAtTemplateBase('includes/footer.php');
