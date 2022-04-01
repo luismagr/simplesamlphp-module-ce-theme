@@ -9,7 +9,7 @@ $this->includeAtTemplateBase('includes/header.php');
         <div class="region region--content">
 
             <?php
-            if ($this->data['errorcode'] !== null) {
+            if (isset($this->data['error']) && $this->data['error'] !== false) {
                 ?>
                 <div class="system-messages-wrapper" data-drupal-messages="">
                     <div role="contentinfo" aria-label="Error message" class="error">
@@ -17,8 +17,7 @@ $this->includeAtTemplateBase('includes/header.php');
                             <p><strong><?php echo $this->t('{login:error_header}'); ?></strong></p>
                             <h2 class="visually-hidden">Error message</h2>
                             <ul>
-                                <li><?php echo htmlspecialchars($this->t($this->data['errorcodes']['title'][$this->data['errorcode']], $this->data['errorparams'])); ?></li>
-                                <li><?php echo htmlspecialchars($this->t($this->data['errorcodes']['descr'][$this->data['errorcode']], $this->data['errorparams'])); ?></li>
+                                <li><?php echo htmlspecialchars($this->data['error']); ?></li>
                             </ul>
                         </div>
                     </div>
