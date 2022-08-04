@@ -11,6 +11,6 @@
     }
   ],
   "require": {
-    "luismagr/simplesamlphp-module-installe": "*"
+    "luismagr/simplesamlphp-module-installer": "*"
   }
 }
