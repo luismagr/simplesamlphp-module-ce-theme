@@ -1,5 +1,5 @@
 {
-  "name": "codeenigma/simplesamlphp-module-ce-theme",
+  "name": "luismagr/simplesamlphp-module-ce-theme",
   "description": "Code Enigma SimpleSAMLphp theme",
   "type": "simplesamlphp-module",
   "keywords": ["simplesamlphp", "module", "theme"],
