@@ -11,6 +11,6 @@
     }
   ],
   "require": {
-    "composer/installers": "*"
+    "luismagr/simplesamlphp-module-installe": "*"
   }
 }
