@@ -11,6 +11,6 @@
     }
   ],
   "require": {
-    "codeenigma/simplesamlphp-module-installer": "*"
+    "composer/installers": "*"
   }
 }
